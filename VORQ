@@ -1,0 +1,56 @@
+# VORQ — GitHub Repository Automation Tool
+
+A professional command-line application for creating and initializing GitHub repositories automatically.
+
+## Features
+
+- Create public or private GitHub repositories
+- Initialize local Git repositories
+- Generate README.md, .gitignore, and LICENSE files
+- Configure Git branches and remotes
+- Create an initial commit
+- Push code to GitHub
+- Support personal accounts and organizations
+- Validate repository names
+- Handle API errors safely
+- Use environment variables for authentication
+
+## Requirements
+
+- Python 3.10+
+- Git
+- A GitHub Personal Access Token with appropriate repository permissions
+
+## Quick Start
+
+Set your GitHub token as an environment variable:
+
+**Windows PowerShell**
+```powershell
+$env:GITHUB_TOKEN="YOUR_GITHUB_TOKEN"
+```
+
+**macOS / Linux**
+```bash
+export GITHUB_TOKEN="YOUR_GITHUB_TOKEN"
+```
+
+Create a public repository:
+
+```bash
+python vorq.py create my-project --description "A professional software project"
+```
+
+Create a private repository:
+
+```bash
+python vorq.py create my-project --private
+```
+
+## Security
+
+Never commit access tokens, passwords, or other secrets to Git. Use environment variables and keep credentials out of source code.
+
+## License
+
+MIT
